@@ -94,6 +94,7 @@ class ResourceTypeInfo implements Author {
 		try {
 			uri = new URL(website).toURI();
 		} catch (Exception e2) {
+                    System.out.println("errore");    
 		}
 		return uri;
 	}

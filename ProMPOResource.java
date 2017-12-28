@@ -29,7 +29,7 @@ public class ProMPOResource extends ProMResource<ProvidedObjectID> {
 				r.parents.remove(this);
 			}
 		} catch (ProvidedObjectDeletedException e) {
-			// THat's fine
+			System.out.println("errore");    // THat's fine
 		}
 	}
 

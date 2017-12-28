@@ -1,6 +1,5 @@
 package org.processmining.contexts.cli;
 
-import jargs.gnu.CmdLineParser;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -30,7 +29,7 @@ import org.processmining.framework.util.Pair;
 public class CLI {
 	@Plugin(name = "CLI", parameterLabels = {}, returnLabels = {}, returnTypes = {}, userAccessible = false)
 	@Bootable
-	public void main(CommandLineArgumentList commandlineArguments) throws Throwable {
+	public void other_main(CommandLineArgumentList commandlineArguments) throws Throwable {
 		//try {
 		if (Boot.VERBOSE != Level.NONE) {
 			System.out.println("Starting script execution engine...");

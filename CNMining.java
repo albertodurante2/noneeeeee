@@ -1,7 +1,7 @@
 package org.processmining.plugins.cnmining;
 
 import com.carrotsearch.hppc.IntArrayList;
-import com.carrotsearch.hppc.IntIntOpenHashMap;
+
 import com.carrotsearch.hppc.IntOpenHashSet;
 import com.carrotsearch.hppc.ObjectArrayList;
 import com.carrotsearch.hppc.ObjectContainer;
@@ -9,29 +9,23 @@ import com.carrotsearch.hppc.ObjectIntOpenHashMap;
 import com.carrotsearch.hppc.ObjectLookupContainer;
 import com.carrotsearch.hppc.ObjectObjectOpenHashMap;
 import com.carrotsearch.hppc.ObjectOpenHashSet;
-import com.carrotsearch.hppc.cursors.IntCursor;
-import com.carrotsearch.hppc.cursors.ObjectCursor;
-import com.fluxicon.slickerbox.components.NiceSlider;
-import com.fluxicon.slickerbox.factory.SlickerFactory;
 
-import java.awt.Color;
+import com.carrotsearch.hppc.cursors.ObjectCursor;
+
+
 import java.awt.Dimension;
-import java.io.File;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.OpenOption;
-import java.nio.file.StandardOpenOption;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-import javax.swing.BorderFactory;
-import javax.swing.JOptionPane;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
-import org.deckfour.uitopia.api.event.TaskListener;
+import javax.swing.JOptionPane;
+
+
+
 import org.deckfour.xes.extension.std.XConceptExtension;
 import org.deckfour.xes.extension.std.XLifecycleExtension;
 import org.deckfour.xes.extension.std.XTimeExtension;
@@ -46,7 +40,7 @@ import org.processmining.contexts.cli.CLIPluginContext;
 import org.processmining.contexts.uitopia.UIPluginContext;
 import org.processmining.contexts.uitopia.annotations.UITopiaVariant;
 import org.processmining.framework.plugin.annotations.Plugin;
-import org.processmining.framework.util.ui.widgets.ProMPropertiesPanel;
+
 import org.processmining.models.causalnet.CausalNetAnnotations;
 import org.processmining.models.causalnet.CausalNetAnnotationsConnection;
 import org.processmining.models.connections.GraphLayoutConnection;
@@ -54,9 +48,7 @@ import org.processmining.models.connections.flexiblemodel.FlexEndTaskNodeConnect
 import org.processmining.models.connections.flexiblemodel.FlexStartTaskNodeConnection;
 import org.processmining.models.flexiblemodel.EndTaskNodesSet;
 import org.processmining.models.flexiblemodel.Flex;
-import org.processmining.models.flexiblemodel.FlexFactory;
-import org.processmining.models.flexiblemodel.FlexNode;
-import org.processmining.models.flexiblemodel.SetFlex;
+
 import org.processmining.models.flexiblemodel.StartTaskNodesSet;
 import org.processmining.models.graphbased.directed.petrinet.Petrinet;
 import org.processmining.models.graphbased.directed.petrinet.PetrinetNode;

@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
+
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -913,6 +913,7 @@ public class ProMResourceManager extends UpdateSignaller implements ResourceMana
             try {
                 conn = connectionManager.getConnection(id);
                 if (!conn.isRemoved()) {
+                    
                     // TODO
                     java.util.List<Collection<ProMPOResource>> values = new ArrayList<Collection<ProMPOResource>>();
                     for (Object o : conn.getObjects().baseSet()) {
@@ -931,7 +932,7 @@ public class ProMResourceManager extends UpdateSignaller implements ResourceMana
                     signalUpdate();
                 }
             } catch (ConnectionCannotBeObtained e) {
-                // do nothing
+                System.out.println("errore");    // do nothing
             }
         }
     }

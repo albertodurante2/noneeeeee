@@ -35,7 +35,7 @@ public class UI {
 
 	@Plugin(name = "UITopia", parameterLabels = {}, returnLabels = {}, returnTypes = {}, userAccessible = false)
 	@Bootable
-	public UITopiaController main(CommandLineArgumentList commandlineArguments) {
+	public UITopiaController other_main(CommandLineArgumentList commandlineArguments) {
 		UIContext globalContext;
 		globalContext = new UIContext();
 		globalContext.initialize();

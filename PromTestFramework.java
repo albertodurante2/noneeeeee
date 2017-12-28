@@ -47,7 +47,7 @@ public class PromTestFramework {
 				}
             return failedTest;
         }
-	public void main(CommandLineArgumentList commandlineArguments) throws Throwable {
+	public void other_main(CommandLineArgumentList commandlineArguments) throws Throwable {
 		System.out.println("Entering ProM Test Framework");
 		
 		// from where do we read the tests
@@ -140,10 +140,10 @@ public class PromTestFramework {
             try {
                 flag=new File(url.toURI()).getCanonicalPath().startsWith(libPath);
             }catch (IOException e){
-                
+                System.out.println("errore");    
             }catch (URISyntaxException e){
-                
-            }
+                System.out.println("errore");    
+                }
             return flag;
         }
 	/**
